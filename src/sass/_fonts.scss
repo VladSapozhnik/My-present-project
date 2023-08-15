@@ -1,0 +1,91 @@
+//Proxima Nova
+
+//Proxima Nova Bl
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/ProximaNova-Black.eot');
+    src: local('Proxima Nova Black'), local('ProximaNova-Black'),
+    url('../fonts/ProximaNova-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ProximaNova-Black.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Black.woff') format('woff'),
+    url('../fonts/ProximaNova-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+//Proxima Nova Rg
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/ProximaNova-Bold.eot');
+    src: local('Proxima Nova Bold'), local('ProximaNova-Bold'),
+    url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Bold.woff') format('woff'),
+    url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+// Proxima Nova Rg
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/ProximaNova-Regular.eot');
+    src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
+    url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Regular.woff') format('woff'),
+    url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//Proxima Nova Lt
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/ProximaNova-Semibold.eot');
+    src: local('Proxima Nova Semibold'), local('ProximaNova-Semibold'),
+    url('../fonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ProximaNova-Semibold.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Semibold.woff') format('woff'),
+    url('../fonts/ProximaNova-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+//Blogger Sans
+
+@font-face {
+    font-family: 'Blogger Sans';
+    src: url('../fonts/BloggerSans-Bold.eot');
+    src: local('Blogger Sans Bold'), local('BloggerSans-Bold'),
+    url('../fonts/BloggerSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BloggerSans-Bold.woff2') format('woff2'),
+    url('../fonts/BloggerSans-Bold.woff') format('woff'),
+    url('../fonts/BloggerSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blogger Sans';
+    src: url('../fonts/BloggerSans.eot');
+    src: local('Blogger Sans'), local('BloggerSans'),
+    url('../fonts/BloggerSans.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BloggerSans.woff2') format('woff2'),
+    url('../fonts/BloggerSans.woff') format('woff'),
+    url('../fonts/BloggerSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blogger Sans';
+    src: url('../fonts/BloggerSans-Medium.eot');
+    src: local('Blogger Sans Medium'), local('BloggerSans-Medium'),
+    url('../fonts/BloggerSans-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BloggerSans-Medium.woff2') format('woff2'),
+    url('../fonts/BloggerSans-Medium.woff') format('woff'),
+    url('../fonts/BloggerSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+

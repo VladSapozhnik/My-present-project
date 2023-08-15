@@ -1,0 +1,7 @@
+.technology {
+  padding: 75px 0;
+  z-index: 1;
+  &__wrapper {
+    @include grid-elements(3, 15px);
+  }
+}

@@ -1,0 +1,113 @@
+.clock {
+  position: relative;
+  background: #242424;
+  max-width: 550px;
+  max-height: 550px;
+  width: 60vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 50px 70px rgba(124,124,124, .25), 5px 5px 10px rgba(124,124,124, .5), 5px 5px 20px rgba(124,124,124, .2), -5px -5px 15px rgba(124,124,124, .75);
+  border-radius: 50%;
+  margin-right: 50px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #2f363e;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    z-index: 100000;
+  }
+
+  span {
+    position: absolute;
+    inset: 20px;
+    color: #fff;
+    text-align: center;
+
+    b {
+      font-size: 1em;
+      opacity: .25;
+      font-weight: 600;
+      display: inline-block;
+    }
+    @for $i from 1 through 12 {
+      &:nth-child(#{$i}) {
+        transform: rotate(calc(30deg * #{$i}));
+        b {
+          transform: rotate(calc(-30deg * #{$i}));
+        }
+      }
+    }
+  }
+
+  .circle {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    border: 1px solid rgba(0,0,0, .25);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 10;
+
+    i {
+      position: absolute;
+      width: 6px;
+      height: 50%;
+      transform-origin: bottom;
+      transform: scaleY(0.5);
+    }
+
+    &--1 {
+      i {
+        width: 2px;
+        background: #04fc43;
+      }
+      &:before {
+        background: #04fc43;
+        box-shadow: 0 0 20px #04fc43, 0 0 60px #04fc43;
+      }
+    }
+
+    &--2 {
+      width: 60%;
+      height: 60%;
+      z-index: 9;
+      i {
+        width: 6px;
+        background: #fee800;
+      }
+      &:before {
+        background: #fee800;
+        box-shadow: 0 0 20px #fee800, 0 0 60px #fee800;
+      }
+    }
+
+    &--3 {
+      width: 50%;
+      height: 50%;
+      z-index: 8;
+      i {
+        background: #ff2972;
+      }
+      &:before {
+        background: #ff2972;
+        box-shadow: 0 0 20px #ff2972, 0 0 60px #ff2972;
+      }
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -8.5px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+    }
+  }
+}

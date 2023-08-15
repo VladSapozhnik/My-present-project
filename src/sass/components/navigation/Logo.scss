@@ -1,0 +1,8 @@
+.logo {
+  @include text-size(14);
+
+  &__pic {
+    width: 40px;
+    border-radius: 50%;
+  }
+}

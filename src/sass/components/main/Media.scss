@@ -1,0 +1,13 @@
+.media {
+  position: absolute;
+  &__video {
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  //z-index: -1;
+  //&__video {
+  //  //height: 100%;
+  //}
+}

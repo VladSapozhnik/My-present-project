@@ -1,0 +1,87 @@
+html, body {
+    height: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 100%;
+    //background-color: $background-color;
+    font-family: $font-family;
+    font-size: $font-size-paragraph;
+    color: $font-color;
+
+    .wrap {
+        flex: 1 0 auto;
+    }
+
+    .competition-wrap {
+        padding-top: 140px;
+        @include point(mg-def) {
+            padding-top: 115px;
+        }
+        @include point(def-down) {
+            padding-top: 78px;
+        }
+    }
+
+    #app {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+ul:not([class]), ol:not([class]) {
+    list-style-position: outside;
+    margin-bottom: 25px;
+
+    li:not([class]) {
+        margin-bottom: 10px;
+        margin-left: 15px;
+        font-size: $font-size-paragraph;
+    }
+}
+a {
+    text-decoration: none;
+    color: $link-color;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        @if ($link-hover-color != false) {
+            background-color: $link-hover-color;
+        }
+        width: 0;
+        transition: all .8s;
+        right: 0;
+        margin: 0 auto;
+        left: 0;
+        bottom: 0%;
+        height: 10%;
+    }
+    &:hover:after {
+        width: 100%;
+        right: 0;
+        left: 0;
+        opacity: 1;
+    }
+
+    &:hover {
+        text-decoration: none;
+        @if ($link-hover-color != false) {
+            color: $link-hover-color !important;
+        }
+    }
+
+    img {
+        border: none;
+    }
+}
+
+

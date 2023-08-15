@@ -1,0 +1,21 @@
+$colorCursor: $blue;
+
+.follow-cursor {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $colorCursor;
+  border-radius: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  position: absolute;
+  z-index: 9999999;
+  pointer-events: none;
+  transition: width 0.64s, height 0.64s, border-radius 0.64s, background 0.64s;
+}
+
+.follow-cursor_active {
+  height: 100px;
+  width: 100px;
+  border-width: 2px;
+  background: rgba($colorCursor, .25);;
+}

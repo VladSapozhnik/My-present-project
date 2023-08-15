@@ -1,0 +1,124 @@
+
+
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  width: 64vmin;
+  height: 64vmin;
+  border-radius: 50%;
+  position: relative;
+  background: radial-gradient(ellipse at center, $pink, $pink 100%);
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3vmin solid $green;
+    box-shadow: 0 0 15px 7px $green, inset 0 0 25px 5px $white;
+  }
+  &:after {
+    content: '';
+    display: block;
+    width: 3.5vmin;
+    height: 3.5vmin;
+    border-radius: 50%;
+    background-color: lighten( $pink, 20 );
+    position: absolute;
+  }
+
+  &__seeds {
+    width: 85%;
+    height: 85%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    div {
+      height: 3.5vmin;
+      width: 2vmin;
+      background-color: darken($pink, 15);
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      position: absolute;
+
+      @for $i from 1 through 15 {
+        &:nth-child(#{$i}) {
+          top: random(80) + 1%;
+          left: $i * 6%;
+          transform: rotate(#{random(360)deg});
+        }
+      }
+    }
+  }
+
+  &-quarter {
+    height: 85%;
+    width: 85%;
+    position: absolute;
+
+    &__top {
+      top: 0;
+    }
+    &__right {
+      right: 3%;
+    }
+    &__bottom {
+      bottom: 0;
+    }
+    &__left {
+      left: 3%;
+    }
+
+    div {
+      height: 10%;
+      width: 2.4%;
+      border-radius: 1vmin;
+      background-color: darken($pink, 25);
+      position: absolute;
+
+      &:nth-child( even ) {
+        top: 50% - 5%;
+        transform: rotate( 90deg );
+      }
+
+      &:nth-child( odd ) {
+        left: 50% - 1.2%;
+      }
+    }
+  }
+
+  &-hands {
+    div {
+      position: absolute;
+      bottom: 50%;
+      border-radius: 1vmin;
+      transform-origin: 50% 100%;
+      transform: rotate( 0 );;
+    }
+    &__m {
+      height: 40%;
+      width: 2.4%;
+      left: 50% - 1.2%;
+      background-color: darken( $pink, 33 );
+    }
+    &__h {
+      height: 27%;
+      width: 2.4%;
+      left: 50% - 1.2%;
+      background-color: darken( $pink, 44 );
+    }
+    &__s {
+      height: 50%;
+      width: 1%;
+      left: 50% - 0.5%;
+      bottom: 40% !important;
+      transform-origin: 50% 80% !important;
+      background-color: lighten( $pink, 20 );
+    }
+  }
+}

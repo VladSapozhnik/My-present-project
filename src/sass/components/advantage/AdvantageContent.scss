@@ -1,0 +1,6 @@
+.advantage-content {
+
+  &__title {
+    @include title-h2(40px, left, $green);
+  }
+}

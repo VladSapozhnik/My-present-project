@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+::before, ::after {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: (1360 + 54px);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 27px;
+    //@include point(lg-down){
+    //    max-width: 100%;
+    //}
+    //@include point(xl-lg) {
+    //    width: 1240px;
+    //}
+    //@include point(lg-def) {
+    //    width: 990px;
+    //}
+    //@include point(def-down){
+    //    width: 100%;
+    //}
+}
+
+.container-full {
+    max-width: (1600 + 54px);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 27px;
+}
+
+.container-small {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 753px;
+    max-width: 100%;
+}

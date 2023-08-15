@@ -1,0 +1,15 @@
+@mixin title-h2($title-margin:0, $align-title: left, $color: $h2-color){
+  margin-bottom: $title-margin;
+  //padding: 0;
+  text-align: $align-title;
+  font-size: 60px;
+  line-height: 125%;
+  color: $color;
+  font-family: $font-family;
+  @include point(lg-hd) {
+    font-size: 48px;
+  }
+  @include point(xs-ms) {
+    font-size: 36px;
+  }
+}

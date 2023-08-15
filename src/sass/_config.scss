@@ -1,0 +1,45 @@
+//Media breakpoints
+$points: (
+    st: 320,
+    xs: 375,
+    psw: 412,
+    sm: 480,
+    ms: 640,
+    md: 960,
+    def: 1024,
+    lg: 1280,
+    xl: 1366,
+    mg: 1440,
+    hd: 1600,
+    dt: 1920
+);
+$red: red;
+$white: white;
+$dark: #333;
+$blue: #535bf2;
+$brightBlue: #92dfff;
+$pink: #ec7277;
+$green: #079554;
+
+//header
+$h2-color: $white;
+
+//Font families
+$font-family: 'Roboto', sans-serif;
+$font-family-alt: $font-family;
+$font-color: $white;
+
+//PARAGRAPH STYLES
+$paragraph-margin: 25px; //margin-bottom
+$font-size-paragraph: 24px;
+$paragraph-height: 1.5;
+
+
+
+//LINK
+$list-image: false; //list.png
+$background-color: #000;
+$link-color: $white;
+$link-hover-color: $red;
+
+
