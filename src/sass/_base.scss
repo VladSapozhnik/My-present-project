@@ -1,9 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     height: 100%;
     -webkit-text-size-adjust: 100%;
 }
-
-
 
 body {
     position: relative;

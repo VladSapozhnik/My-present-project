@@ -1,9 +1,9 @@
-import {MTechnologyItem} from "./TechnologyItem.jsx";
-import Cubic from "../Cubic.jsx";
+import {MInformationCard} from "./InformationCard.jsx";
+import Cubic from "./Cubic.jsx";
 import {motion} from "framer-motion";
 import {MTitle} from "../Title.jsx";
 
-const Technology = () => {
+const Information = () => {
     const advantagesArray = [
         {
             "id": 1,
@@ -37,24 +37,18 @@ const Technology = () => {
     }
 
     return (
-        <motion.div className={'technology _pos-rel _full-screen'}
+        <motion.div className={'information _pos-rel _pb-100 _f _f-column _j-center _i-center _full-screen'}
                     initial={{y: -2000, opacity: 0}}
                     animate={{y: 0, opacity: 1}}
-                    exit={{y: 2000, opacity: 0}}
+                    exit={{y: 0, opacity: 0}}
                     transition={{duration: .7}}
-                    style={{
-                        height: '100vh',
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        background: '#a14dd4'
-                    }}>
+       >
             <div className={'container'}>
                 <motion.div initial={'start'} whileInView={'end'}>
                     <MTitle text={'Досвід - це можливості'} custom={300} variants={animateContent}/>
-                    <div className={'technology__wrapper'}>
+                    <div className={'information__wrapper'}>
                         {advantagesArray.map((item, i) =>
-                            <MTechnologyItem custom={startCoordinate[i]} variants={animateContent} key={item.id}
+                            <MInformationCard custom={startCoordinate[i]} variants={animateContent} key={item.id}
                                              title={item.title} img={`./images/${item.src}.png`}
                                              description={item.description}/>
                         )}
@@ -62,8 +56,9 @@ const Technology = () => {
                 </motion.div>
             </div>
             <Cubic/>
+            {/*<Bubbles />*/}
         </motion.div>
     )
 }
 
-export default Technology;
+export default Information;

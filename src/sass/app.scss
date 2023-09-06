@@ -18,24 +18,39 @@
 @import "helpers";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 //components
-@import "components/Title";
+
+//main
 @import "components/main/Main";
 @import "components/main/Media";
 @import "components/main/MainContent";
-@import "components/technology/TechnologyItem";
-@import "components/technology/Technology";
-@import "components/footer/Footer";
-@import "components/FollowCursor";
-@import "components/StickyBubble";
+
+//information
+@import "components/information/InformationCard";
+@import "components/information/Information";
+@import "components/information/Cubic";
+@import "components/information/Bubbles";
+
+//advantage
 @import "components/advantage/Advantage";
 @import "components/advantage/AdvantageContent";
 @import "components/advantage/Clock";
-@import "components/AnimatedButton";
+
+//navigation
 @import "components/navigation/Navigation";
 @import "components/navigation/Logo";
-@import "components/tag/TagCloud";
-@import "components/Cubic";
+
+//technology
+@import "components/technology/Technology";
+@import "components/technology/TextMorph";
+
+//footer
+@import "components/footer/Footer";
+
+@import "components/AnimatedButton";
+@import "components/Title";
 @import "components/SquareAnimation";
+@import "components/FollowCursor";
+@import "components/StickyBubble";
 
 
 

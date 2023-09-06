@@ -2,7 +2,9 @@
   display: flex;
   align-items: center;
   padding: 175px 0;
+  z-index: 1;
+  background-color: $pink;
   &__title {
-    @include title-h2(40px, left, $green);
+    @include title-h2(40px, left, $darkRed);
   }
 }

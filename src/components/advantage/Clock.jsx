@@ -48,9 +48,12 @@ const Clock = forwardRef((_, ref) => {
 
     return (
         <div ref={ref}>
-            <div className={'clock'} ref={clockRef} style={{height: size.clientWidth > 550 ? 550 : size.clientWidth + 'px'}}>
+            <div className={'clock'} ref={clockRef}
+                 style={{height: size.clientWidth > 550 ? 550 : size.clientWidth + 'px'}}>
                 {[...Array(12)].map((item, i) => <span key={i}><b>{i + 1}</b></span>)}
-
+                <div className={'whirlpool whirlpool--1'}></div>
+                <div className={'whirlpool whirlpool--2'}></div>
+                <div className={'whirlpool whirlpool--3'}></div>
                 <div ref={ssRef} className={'circle circle--1'}><i></i></div>
                 <div ref={mmRef} className={'circle circle--2'}><i></i></div>
                 <div ref={hhRef} className={'circle circle--3'}><i></i></div>

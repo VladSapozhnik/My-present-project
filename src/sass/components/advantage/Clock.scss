@@ -1,23 +1,57 @@
 .clock {
   position: relative;
-  background: #242424;
+  background: $darkRed;
   max-width: 550px;
   max-height: 550px;
   width: 60vmin;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 10px 50px 70px rgba(124,124,124, .25), 5px 5px 10px rgba(124,124,124, .5), 5px 5px 20px rgba(124,124,124, .2), -5px -5px 15px rgba(124,124,124, .75);
   border-radius: 50%;
   margin-right: 50px;
+
+  .whirlpool {
+    border-radius: 50%;
+    position: absolute;
+    &--1 {
+      width: 105%;
+      height: 105%;
+      border: 8px solid $white;
+      border-left-color: $darkRed;
+      animation: cssload-rotate 2500ms linear infinite;
+    }
+
+    &--2 {
+      width: 113%;
+      height: 113%;
+      border: 5px solid $white;
+      border-left-color: $darkRed;
+      animation: cssload-rotate 3500ms linear infinite;
+    }
+
+    &--3 {
+      width: 120%;
+      height: 120%;
+      border: 3px solid $white;
+      border-left-color: $darkRed;
+      animation: cssload-rotate 6000ms linear infinite;
+    }
+  }
+
+  @keyframes cssload-rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
 
   &:before {
     content: '';
     position: absolute;
     width: 8px;
     height: 8px;
-    background: #2f363e;
-    border: 1px solid #fff;
+    background: $darkRed;
+    border: 1px solid $white;
     border-radius: 50%;
     z-index: 100000;
   }
@@ -25,12 +59,12 @@
   span {
     position: absolute;
     inset: 20px;
-    color: #fff;
+    color: #F9DBBD;
     text-align: center;
 
     b {
       font-size: 1em;
-      opacity: .25;
+      //opacity: .25;
       font-weight: 600;
       display: inline-block;
     }
@@ -48,7 +82,7 @@
     position: absolute;
     width: 70%;
     height: 70%;
-    border: 1px solid rgba(0,0,0, .25);
+    border: 1px solid rgba($white, .25);
     border-radius: 50%;
     display: flex;
     justify-content: center;

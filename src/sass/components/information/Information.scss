@@ -1,0 +1,7 @@
+.information {
+  z-index: 1;
+  background-color: $violet;
+  &__wrapper {
+    @include grid-elements(3, 15px);
+  }
+}

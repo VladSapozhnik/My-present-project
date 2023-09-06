@@ -1,7 +1,16 @@
 .technology {
-  padding: 75px 0;
-  z-index: 1;
-  &__wrapper {
-    @include grid-elements(3, 15px);
+  &-cloud {
+    width: 100%;
+    position: relative;
+
+    &__tag {
+      padding: 5px;
+      position: absolute;
+      max-width: 110px;
+      filter: grayscale(100%);
+      &:hover {
+        filter: grayscale(0%);
+      }
+    }
   }
 }

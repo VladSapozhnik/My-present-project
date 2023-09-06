@@ -1,234 +1,242 @@
 import {motion} from "framer-motion";
-import Title from "../Title.jsx";
+import TextMorph from "./TextMorph.jsx";
 
 const TagClouds = () => {
     const tagCloudArray = [
         {
             value: 'html', pos: {
-                x: 68,
-                y: 5,
+                x: 72,
+                y: 10,
             }
         },
         {
-            value: 'css', pos: {
-                x: 72,
-                y: 36,
+            value: 'figma', pos: {
+                x: 74,
+                y: 73,
             }
         },
         {
             value: 'js', pos: {
-                x: 15,
-                y: 15
+                x: 17,
+                y: 31
             }
         },
         {
             value: 'vue', pos: {
-                x: 26,
-                y: 7,
+                x: 15,
+                y: 13,
             }
         },
         {
             value: 'react', pos: {
-                x: 4,
-                y: 64,
+                x: 6,
+                y: 58,
             }
         },
         {
             value: 'ts', pos: {
-                x: 20,
-                y: 34,
+                x: 93,
+                y: 65,
             }
         },
         {
             value: 'yarn', pos: {
-                x: 11,
-                y: 27
+                x: 73,
+                y: 25
             }
         },
         {
             value: 'react-toolkit', pos: {
-                x: 6,
-                y: 43,
+                x: 17,
+                y: 52,
             }
         },
         {
             value: 'react-router', pos: {
-                x: 82,
+                x: 78,
                 y: 90,
             }
         },
         {
             value: 'vuex', pos: {
-                x: 43,
-                y: 90,
+                x: 47,
+                y: 91,
             }
         },
         {
-            value: 'npm', pos: {
-                x: 61,
-                y: 86,
+            value: 'jquery', pos: {
+                x: 67,
+                y: 90,
             }
         },
         {
             value: 'git', pos: {
                 x: 37,
-                y: 83,
+                y: 91,
             }
         },
         {
             value: 'php', pos: {
-                x: 28,
-                y: 85,
-            }
-        },
-        {
-            value: 'phpmyadmin', pos: {
-                x: 50,
-                y: 0,
-            }
-        },
-        {
-            value: 'mysql', pos: {
-                x: 70,
-                y: 72,
+                x: 30,
+                y: 82,
             }
         },
         {
             value: 'nodejs', pos: {
-                x: 20,
-                y: 20,
+                x: 55,
+                y: 9,
+            }
+        },
+        {
+            value: 'mysql', pos: {
+                x: 82,
+                y: 34,
+            }
+        },
+        {
+            value: 'css', pos: {
+                x: 95,
+                y: 90,
             }
         },
         {
             value: 'sass', pos: {
-                x: 42,
-                y: 6,
+                x: 64,
+                y: 9,
             }
         },
         {
             value: 'less', pos: {
-                x: 6,
-                y: 11,
+                x: 57,
+                y: 91,
             }
         },
         {
             value: 'gulp', pos: {
-                x: 18,
-                y: 2,
-            }
-        },
-        {
-            value: 'es6', pos: {
-                x: 2,
-                y: 31,
-            }
-        },
-        {
-            value: 'vite', pos: {
-                x: 1,
-                y: 0
-            }
-        },
-        {
-            value: 'webpack', pos: {
-                x: 16,
-                y: 87,
-            }
-        },
-        {
-            value: 'nextjs', pos: {
-                x: 88,
-                y: 44,
-            }
-        },
-        {
-            value: 'figma', pos: {
-                x: 88,
-                y: 77,
+                x: 26,
+                y: 36,
+
             }
         },
         {
             value: 'photoshop', pos: {
-                x: 18,
-                y: 72,
+                x: 5,
+                y: 36,
+            }
+        },
+        {
+            value: 'vite', pos: {
+                x: 5,
+                y: 13
+            }
+        },
+        {
+            value: 'webpack', pos: {
+                x: 26,
+                y: 59,
+            }
+        },
+        {
+            value: 'nextjs', pos: {
+                x: 93,
+                y: 46,
+            }
+        },
+        {
+            value: 'i18', pos: {
+                x: 86,
+                y: 83,
+            }
+        },
+        {
+            value: 'es6', pos: {
+                x: 22,
+                y: 77,
             }
         },
         {
             value: 'docker', pos: {
-                x: 94,
-                y: 22,
-            }
-        },
-        {
-            value: 'jquery', pos: {
-                x: 69,
-                y: 20,
+                x: 91,
+                y: 27,
             }
         },
         {
             value: 'vscode', pos: {
-                x: 80,
-                y: 31,
+                x: 74,
+                y: 38,
             }
         },
         {
             value: 'phpstorm', pos: {
-                x: 87,
-                y: 3,
+                x: 91,
+                y: 9,
             }
         },
         {
             value: 'material-ui', pos: {
-                x: 85,
-                y: 64,
+                x: 74,
+                y: 56,
+
             }
         },
         {
             value: 'bootstrap', pos: {
-                x: 78,
-                y: 12,
+                x: 82,
+                y: 14,
             }
         },
         {
             value: 'linux', pos: {
-                x: 60,
+                x: 46,
                 y: 8,
             }
         },
         {
             value: 'rest-api', pos: {
-                x: 73,
-                y: 56,
+                x: 84,
+                y: 50,
             }
         },
         {
             value: 'json', pos: {
-                x: 33,
-                y: 0,
+                x: 14,
+                y: 92,
             }
         },
         {
             value: 'express', pos: {
-                x: 14,
-                y: 55,
+                x: 13,
+                y: 72,
             }
         },
         {
-            value: 'i18', pos: {
-                x: 80,
-                y: 45,
+            value: 'npm', pos: {
+                x: 84,
+                y: 65,
             }
         },
         {
             value: 'swiper', pos: {
-                x: 51,
-                y: 86,
+                x: 27,
+                y: 15,
             }
         },
         {
             value: 'framer-motion', pos: {
-                x: 3,
-                y: 80,
+                x: 5,
+                y: 87,
+            }
+        },
+        {
+            value: 'vuelidate', pos: {
+                x: 37,
+                y: 9,
+            }
+        },
+        {
+            value: 'axios', pos: {
+                x: 23,
+                y: 92,
             }
         },
     ]
@@ -252,23 +260,19 @@ const TagClouds = () => {
     }
 
     return (
-        <motion.section className={''}
+        <motion.section className={'technology _full-screen _f _pt-100 _j-center _f-column _i-center'}
                         initial={{x: 2000, opacity: 0}}
                         animate={{x: 0, opacity: 1}}
                         exit={{x: -2000, opacity: 0}}
                         transition={{duration: .6}}
                         style={{
-                            height: '100%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            background: '#ffcc99'
+                            background: '#FCA17D'
                         }}
         >
-            <div className={'container-full _pos-rel'}>
+            <div className={'container-full _h-100 _pos-rel'}>
 
-                <motion.div initial={'start'} whileInView={'end'}
-                            className={'cloud _f _f-wrap _i-center _j-center'}>
+                <motion.div initial={'start'} whileInView={'end'} className={'technology-cloud _h-100 _f _j-center _i-center _pos-rel'}>
+                    <TextMorph />
                     {tagCloudArray.map((item, i) =>
                         <motion.img src={`./icon/tag/${item.value}.svg`}
                                     alt={item.value}
@@ -280,7 +284,7 @@ const TagClouds = () => {
                                         stiffness: 400,
                                         damping: 10
                                     }}
-                                    className={'cloud__tag'}/>)}
+                                    className={'technology-cloud__tag'}/>)}
                 </motion.div>
             </div>
 

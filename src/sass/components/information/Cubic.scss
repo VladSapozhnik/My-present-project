@@ -13,17 +13,20 @@
     @return $random-range;
   }
 
+
   &__cubic {
     position: absolute;
     display: block;
     width: 20px;
     height: 20px;
     //background: #92dfff;
+    &:hover {
+      background: rgba($brightBlue, .7);
+    }
     border: 1px solid $brightBlue;
-    opacity: .2;
     animation: animate 25s linear infinite;
     bottom: -150px;
-    @for $i from 0 through 25 {
+    @for $i from 0 through 30 {
       &:nth-child(#{$i}) {
         $size: (random-range(3, 30));
         $width: ($size * 3) + px;
@@ -38,14 +41,11 @@
 
   @keyframes animate {
     0% {
-      transform: translateY(0) rotate(0deg);
-      opacity: 1;
+      transform: translate(200px, 0) rotate(0deg);
       border-radius: 0;
     }
-
     100% {
-      transform: translateY(-1000px) rotate(720deg);
-      opacity: 0;
+      transform: translate(-200px, -1000px) rotate(720deg);
       border-radius: 60%;
     }
   }

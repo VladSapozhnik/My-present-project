@@ -12,13 +12,13 @@
     height: 30px;
     left: 0;
     top: 0;
-    border: solid 1px $green;
+    border: solid 1px $darkRed;
     transform-origin: top left;
     transform: scale(0) rotate(0deg) translate(-50%, -50%);
-    animation: cube 12s ease-in forwards infinite;
+    animation: cube 10s ease-in forwards infinite;
     @for $i from 0 through 20 {
       &:nth-child(#{$i}) {
-        animation-delay: random(12) + s;
+        animation-delay: random(10) + s;
         left: #{random(100) + '%'};
         top: #{random(100) + '%'};
       }

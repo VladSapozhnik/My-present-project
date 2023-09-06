@@ -13,7 +13,7 @@ const Navigation = () => {
         {
             id: 2,
             text: "Технології",
-            to: "technology"
+            to: "information"
         },
         {
             id: 3,
@@ -47,7 +47,7 @@ const Navigation = () => {
 
 
     return (
-        <motion.nav initial={'start'} whileInView={'end'} className={'navigation _pos-fix _pos-left _pos-top'}>
+        <motion.header initial={'start'} whileInView={'end'} className={'navigation _pos-fix _pos-left _pos-top'}>
             <div className={'container _f _j-between _i-center'}>
                 <MLogo custom={1.5} variants={animateNav} />
                 <ul className={'navigation-list _list-none _f'}>
@@ -63,7 +63,7 @@ const Navigation = () => {
                     </li>
                 </ul>
             </div>
-        </motion.nav>
+        </motion.header>
     )
 }
 

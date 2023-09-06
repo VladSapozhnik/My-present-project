@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import {forwardRef} from "react";
 import {motion} from "framer-motion";
 
-const TechnologyItem = forwardRef(({title, img, description}, ref) => {
+const InformationCard = forwardRef(({title, img, description}, ref) => {
     return (
         <div className="card" ref={ref}>
             <div className="face face--front">
@@ -21,11 +21,11 @@ const TechnologyItem = forwardRef(({title, img, description}, ref) => {
     )
 })
 
-TechnologyItem.propTypes = {
+InformationCard.propTypes = {
     title: PropTypes.string,
     img: PropTypes.string,
     description: PropTypes.string
 }
 
-export const MTechnologyItem = motion(TechnologyItem);
-export default TechnologyItem;
+export const MInformationCard = motion(InformationCard);
+export default InformationCard;
